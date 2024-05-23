@@ -1,13 +1,14 @@
 .conteudo-sobreMim{
     background-color: black;
     width: 100%;
-    height: 85%;
+    min-height: 80%;
 }
 
 .div{
     margin-left: 2rem;
     margin-right: 2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -17,4 +18,33 @@
     background-color: black;
     color: white;
     max-width: 50%;
+    max-height: 90%;
 }
+
+
+.p-nome{
+color: white;
+font-size: 36px;
+margin-bottom: -5px;
+}
+
+.p-funcao{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 690px) {
+    .sobreMim-texto{
+        //margin-top: 2rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .p-nome{
+        margin-top: 2rem;
+    }
+}
+
+
