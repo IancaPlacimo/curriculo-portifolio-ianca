@@ -1,0 +1,69 @@
+.conteudo-contatos{
+    background-color: black;
+    width: 100%;
+    min-height: 79%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   // border: 1px solid red;
+}
+
+// .contato{
+//     width: 100%;
+//     height: 100%;
+//     border: 1px solid red;
+//     color: white;
+// }
+
+.logoLinkedIn{
+    width: 10rem;
+    height: 3rem;
+}
+.logoGit{
+    width: 6rem;
+    height: 6rem;
+}
+img{
+    margin-bottom: 10px;
+}
+.logoWhats{
+    width: 5rem;
+    height: 5rem;
+}
+
+.logoGmail{
+    width: 5rem;
+    height: 5rem;
+}
+
+.infos{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid red;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   // height: 39.8vh;
+}
+
+.ladoA{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 78vh;
+    // border: 1px solid red;
+}
+
+
+.ladoB{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 78vh;
+    // border: 1px solid red;
+}
