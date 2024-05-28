@@ -22,6 +22,12 @@ export class HeaderComponent {
     this.router.navigate(['/sobreMim']);
   }
 
+
+  home(){
+    this.router.navigate(['/home']);
+  }
+
+
   meusProjetos(){
     this.router.navigate(['/meusProjetos']);
   }
