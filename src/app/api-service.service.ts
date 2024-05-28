@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiServiceService {
-  url = 'http://localhost:3000/download';
+  url = 'https://api-pdf.vercel.app/download';
 
   constructor(private http: HttpClient) { }
 
