@@ -47,6 +47,10 @@ header{
 
 @media only screen and (max-width: 595px) {
     .links{
-        display: none;
+        flex-direction: column;
+        gap: 5px;
     }
 }
+
+
+
