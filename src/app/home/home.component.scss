@@ -1,118 +1,182 @@
-.conteudo-home{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 80%;
-    width: 100%;
-background-color: black;
+.conteudo-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80%;
+  width: 100%;
+  background-color: black;
 }
 
-
-.nome{
-    color: white;
-    font-size: 36px;
-    margin-bottom: -5px;
+.nome {
+  color: white;
+  font-size: 36px;
+  margin-bottom: -5px;
 }
-.funcao{
-    color: white;
-    font-size: 25px;   
-}
-
-
-section{
-    width: 50%;
-    height: 100%;
-    display: flex;
- 
-}
-.ImgIanca{
-width: 280px;
-height: 280px;
-margin-right: 1rem;
+.funcao {
+  color: white;
+  font-size: 25px;
 }
 
-.sectionImg{
-    align-items: center;
-    //border: 1px solid red;
-   // background-color: red;
-    justify-content: end;
+section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.ImgIanca {
+  width: 280px;
+  height: 280px;
+  margin-right: 1rem;
 }
 
-.sectionInfos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+.sectionImg {
+  align-items: center;
+  justify-content: end;
 }
 
-.div-buttons{
-    display: flex;
-    flex-direction: row;
+.sectionInfos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
-.button-infos{
-border-radius: 20px;
-width: 140px;
-height: 40px;
-font-weight: 600;
-border: 1px solid white;
-background-color: transparent;
-color: white;
+.div-buttons {
+  display: flex;
+  flex-direction: row;
 }
 
-.button-infos:hover{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-}
-
-.contatoButton{
-    margin-left: 1rem;
+.contatoButton {
+  margin-left: 1rem;
 }
 
 @media only screen and (max-width: 595px) {
-    .funcao{
-        width: 400px;
-        display: flex;
-        justify-content: center;
-    }
+  .funcao {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+  }
 
-    .ImgIanca{
-        width: 180px;
-        height: 180px;
-        margin-bottom: 1rem;
-        margin-right: 1rem;
-        }
+  .ImgIanca {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+  }
 
-    .nome{
-        font-size: 30px;
-    }
+  .nome {
+    font-size: 30px;
+  }
 }
 
 @media only screen and (max-width: 680px) {
-    .conteudo-home{
-        flex-direction: column;
-    }
+  .conteudo-home {
+    flex-direction: column;
+  }
 
-    .sectionImg{
-        align-items: end;
-        justify-content: center;
-    }
+  .sectionImg {
+    align-items: end;
+    justify-content: center;
+  }
 
-    .ImgIanca{
-        margin-right: 0px;
-    }
+  .ImgIanca {
+    margin-right: 0px;
+  }
 
-    .sectionInfos{
-        justify-content: start;
-        align-items: center;
-    }
+  .sectionInfos {
+    justify-content: start;
+    align-items: center;
+  }
 
-    .div-buttons{
-        margin-top:15px;
-    }
-
+  .div-buttons {
+    margin-top: 15px;
+  }
 }
 
+// css button
 
+button {
+  min-width: 110px;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
 
+button:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+// css text
+.intro {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.changing-text {
+  color: rgb(61, 106, 255);
+  text-shadow: 0 0 30px rgba(0, 142, 236, 0.815);
+  font-weight: bold;
+  margin-left: 5px;
+}
